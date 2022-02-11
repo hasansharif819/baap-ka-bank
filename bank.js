@@ -8,6 +8,7 @@ document.getElementById('submit-button').addEventListener('click', function(){
         window.location.href = 'banking.html';
     }
     else{
-        console.log('wrong email or password');
+        userEmail.value = '';
+        userPassword.value = '';
     }
 })
