@@ -38,7 +38,7 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
     const totalWithdrawAmount = previousWithdraw + newWithdraw;
     withdrawTotal.innerText = totalWithdrawAmount;
 
-    // copy 
+    // update balance after withdraw 
     const balanceTotal = document.getElementById('balance-total');
     const balanceTotalText = balanceTotal.innerText;
     const previousBalanceTotal = parseFloat(balanceTotalText);
@@ -48,10 +48,5 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
     // console.log(totalBalanceAmount);
     balanceTotal.innerText = newBalanceTotal;
 
-    // update balance after withdraw 
-
-
     withdrawInput.value = '';
-
-
 })
